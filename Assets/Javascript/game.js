@@ -1,5 +1,5 @@
 //create an array of words
-const word = ['Michael Scott','Jim','Dwight','Pam','Creed','Toby', 'Daryl', 'Stanley','Kevin' ]
+const word = ['Michael Scott','Jim','Dwight','Pam','Creed','Toby', 'Daryl', 'Stanley','Kevin','Dunder Mifflin' ]
 //choose word randomly
 let randNum = Math.floor (Math.random() * word.length);
 let chosenWord = word[randNum];
@@ -47,5 +47,14 @@ else{ wrongWord.push(keyword);
     wrongGuess[0].innerHTML = wrongGuess.join('');
         console.log(wrongWord);
 }
+//music
+var audioElement = document.createElement("audio");
+audioElement.setAttribute("src, Assets/music/TheOfficeThemeSong.mp3");
+$(".theme-button").on("click", function() {
+  audioElement.play();
+});
+$(".pause-button").on("click", function() {
+  audioElement.pause();
+});
 //if right push to right array
 //if wrong push to wrong array
