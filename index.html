@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="Assets/Javascript/game.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="Assets/reset/reset.css">
     <link rel="stylesheet" href="Assets/CSS/style.css">
     <title>Hangman</title>
 </head>
@@ -13,7 +13,9 @@
     <div class="container">
         <header>
         <h1>Hangman</h1>
+        <br>
         <h2>The Office Edition</h2>
+        <br>
         <img class="WorldsBestBoss"
         src="Assets/images/michaelscott.jpg" alt="waytwtya"
         height="155" width="250">
@@ -22,18 +24,6 @@
         <div class="underscore">_ _ _ _</div>
         <div class="rightGuess">right guess</div>
         <div class="wrongGuess">wrong guess</div>
-
-        <script>
-        var audioElement = document.createElement("audio");
-    audioElement.setAttribute("src, Assets/music/TheOfficeThemeSong.mp3");
-    $(".theme-button").on("click", function() {
-      audioElement.play();
-    });
-    $(".pause-button").on("click", function() {
-      audioElement.pause();
-    });
- 
-    </script>
 
     </div>
     
